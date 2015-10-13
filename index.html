@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chocolate Quiz</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/mystyles.css">
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="parent style">
+		<h1>Chocolate Pop Quiz</h1>
+		<div id="beginQuiz" class="child">
+			<p>Introduction:<br><br>
+			   Chocolate is one of the most popular sweet treats known in history. Not only it is a savory sweet but it also provides numerous health benefits to the human body. Chocolate can be seen anywhere in stores, bakeries, spa treatments, holidays, used as an anti-depressant, parties, and many more.
+				<br><br>
+			   Let's see how big of a fan of Chocolate you are.<br><br>Click on the Start button to begin the pop quiz.
+			   <br><br>
+			</p>
+		</div>
+		<div class="child loadQuestion">
+			<p class="question"></p>
+			<form class="radioIdentifier">
+				
+			</form>
+		</div>
+		<div class="child loadAnswer">
+			<p class="question"></p>
+			<h2 class="right">You got it Right</h2><h2 class="wrong">You got it Wrong</h2>
+			<p class="answer"></p>
+			
+		</div>
+		<div id="endQuiz" class="child">
+			<p>End of Quiz</p>
+			<p>Total score: <span class="countRight">10</span> Correct and <span class="countWrong">0</span> Wrong</p>
+			<p id="fanCategory"></p><br>
+			<p>Chocolate Information Links:<br>
+			<a href="http://www.precisionnutrition.com/chocolate-making">Chocolate-making</a><br>
+			<a href="https://www.cadbury.com.au/about-chocolate/harvesting-and-processing-cocoa-beans.aspx">Harvesting-and-processing-cocoa-beans</a><br>
+			<a href="http://facts.randomhistory.com/chocolate-facts.html">Chocolate-facts</a>  
+			</p>
+		</div>
+		<div class="child pStyle">
+			<input type="submit" id="start" class="button" name="submit" value="Start"/>
+			<p class="progress">Question <span class="quizProgress"></span> of 10
+			<input type="submit" id="submit" class="button" name="submit" value="Submit"/>
+  			</p>
+			<p class="score">Total score: <span class="countRight"></span> Correct and <span class="countWrong"></span> Wrong
+				<input type="submit" id="next" class="button" name="submit" value="Next"/>
+			 </p>
+			 <input type="submit" id="startOver" class="button" name="submit" value="Start Over"/>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/myapp.js"></script>
+</body>
+</html>
